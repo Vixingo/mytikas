@@ -1,0 +1,500 @@
+<!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
+    <div data-simplebar class="h-100">
+        <!-- Bottom fixed menu -->
+        <div
+            class="bottom_fixed_menu fixed-bottom clients"
+            style="max-width: 240px"
+        >
+            <h4
+                class="text-white m-0 py-2"
+                style="background-color: rgb(83, 132, 237)"
+            >
+                Your Marketing Expert
+            </h4>
+            <div class="book bg-white pb-1">
+                <div class="row">
+                    <div class="col-4 align-self-center">
+                        <!-- Add the img here -->
+                        <div
+                            style="border: 1px solid #000; border-radius: 25px"
+                        >
+                            <img
+                                class=""
+                                src="Men-Profile-Image.png"
+                                alt=""
+                                style="border-radius: 50%"
+                            />
+                        </div>
+                        <!-- Add the img here -->
+                    </div>
+                    <div class="col-8">
+                        <h4 class="fw-bold pt-2 w-100">Jorden Peire</h4>
+                        <h5 class="fw-bold">(906)- 749-6760</h5>
+                        <button
+                            class="
+                                btn
+                                text-uppercase text-white
+                                py-0
+                                fw-bold
+                                rounded-0
+                            "
+                            style="background-color: rgb(83, 132, 237)"
+                        >
+                            <h5 class="m-0">Book a time</h5>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu" class="clients">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title"><%=translation.Main%></li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Dashboard%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Sales%> </span>
+                    </a>
+                </li>
+                <li class="d-flex justify-content-between">
+                    <a href="/pages-leads" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> Leads </span>
+                    </a>
+                    <div class="text-center">
+                        <button
+                            type="button"
+                            class="btn btn-primary waves-effect waves-light"
+                            data-bs-toggle="modal"
+                            data-bs-target="#myModaladd"
+                        >
+                            <i class="fas fa-plus-circle"></i>
+                        </button>
+                    </div>
+
+                    <!-- sample modal content -->
+                    <div
+                        id="myModaladd"
+                        class="modal fade"
+                        tabindex="-1"
+                        aria-labelledby="myModalLabel"
+                        aria-hidden="true"
+                    >
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5
+                                        class="modal-title mt-0"
+                                        id="myModalLabel"
+                                    >
+                                        Modal Heading
+                                    </h5>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>
+                                        Overflowing text to show scroll behavior
+                                    </h5>
+                                    <p>
+                                        Cras mattis consectetur purus sit amet
+                                        fermentum. Cras justo odio, dapibus ac
+                                        facilisis in, egestas eget quam. Morbi
+                                        leo risus, porta ac consectetur ac,
+                                        vestibulum at eros.
+                                    </p>
+                                    <p>
+                                        Praesent commodo cursus magna, vel
+                                        scelerisque nisl consectetur et. Vivamus
+                                        sagittis lacus vel augue laoreet rutrum
+                                        faucibus dolor auctor.
+                                    </p>
+
+                                    <p>
+                                        Praesent commodo cursus magna, vel
+                                        scelerisque nisl consectetur et. Vivamus
+                                        sagittis lacus vel augue laoreet rutrum
+                                        faucibus dolor auctor.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary waves-effect"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="
+                                            btn btn-primary
+                                            waves-effect waves-light
+                                        "
+                                    >
+                                        Save changes
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Email%> </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Booking%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/settings" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Settings%> </span>
+                    </a>
+                </li>
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="/"><%=translation.Billing%></a></li>
+                </ul>
+
+                <!-- 
+                <li>
+                    <a href="widgets" class="waves-effect">
+                        <i class="mdi mdi-cube-outline"></i>
+                        <span> <%=translation.Widgets%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-email-outline"></i>
+                        <span> <%=translation.Email%> </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="email-inbox"><%=translation.Inbox%></a></li>
+                        <li><a href="email-read"><%=translation.Email_Read%></a></li>
+                        <li><a href="email-compose"><%=translation.Email_Compose%></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="calendar" class="waves-effect">
+                        <i class="mdi mdi-calendar-check"></i>
+                        <span><%=translation.Calendar%></span>
+                    </a>
+                </li>
+
+                <li class="menu-title"><%=translation.Components%></li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-buffer"></i>
+                        <span><%=translation.User_Interface%> </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="ui-buttons"><%=translation.Buttons%></a></li>
+                        <li><a href="ui-colors"><%=translation.Colors%></a></li>
+                        <li><a href="ui-cards"><%=translation.Cards%></a></li>
+                        <li><a href="ui-tabs-accordions"><%=translation.Tabs_and_Accordions%></a></li>
+                        <li><a href="ui-modals"><%=translation.Modals%></a></li>
+                        <li><a href="ui-images"><%=translation.Images%></a></li>
+                        <li><a href="ui-alerts"><%=translation.Alerts%></a></li>
+                        <li><a href="ui-progressbars"><%=translation.Progress_Bars%></a></li>
+                        <li><a href="ui-dropdowns"><%=translation.Dropdowns%></a></li>
+                        <li><a href="ui-lightbox"><%=translation.Lightbox%></a></li>
+                        <li><a href="ui-navs"><%=translation.Navs%></a></li>
+                        <li><a href="ui-pagination"><%=translation.Pagination%></a></li>
+                        <li><a href="ui-popover-tooltips"><%=translation.Popover_and_Tooltips%></a></li>
+                        <li><a href="ui-badge"><%=translation.Badge%></a></li>
+                        <li><a href="ui-carousel"><%=translation.Carousel%></a></li>
+                        <li><a href="ui-video"><%=translation.Video%></a></li>
+                        <li><a href="ui-typography"><%=translation.Typography%></a></li>
+                        <li><a href="ui-sweet-alert"><%=translation.Sweet_Alert%></a></li>
+                        <li><a href="ui-grid"><%=translation.Grid%></a></li>
+                        <li><a href="ui-animation"><%=translation.Animation%></a></li>
+                        <li><a href="ui-highlight"><%=translation.Highlight%></a></li>
+                        <li><a href="ui-rating"><%=translation.Rating%></a></li>
+                        <li><a href="ui-nestable"><%=translation.Nestable%></a></li>
+                        <li><a href="ui-alertify"><%=translation.Alertify%></a></li>
+                        <li><a href="ui-rangeslider"><%=translation.Range_Slider%></a></li>
+                        <li><a href="ui-sessiontimeout"><%=translation.Session_Timeout%></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <span class="badge rounded-pill bg-success float-end">9</span>
+                        <i class="mdi mdi-clipboard-outline"></i>
+                        <span><%=translation.Forms%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="form-elements"><%=translation.Form_Elements%></a></li>
+                        <li><a href="form-validation"><%=translation.Form_Validation%></a></li>
+                        <li><a href="form-advanced"><%=translation.Form_Advanced%></a></li>
+                        <li><a href="form-wizard"><%=translation.Form_Wizard%></a></li>
+                        <li><a href="form-editors"><%=translation.Form_Editors%></a></li>
+                        <li><a href="form-uploads"><%=translation.Form_File_Upload%></a></li>
+                        <li><a href="form-mask"><%=translation.Form_Mask%></a></li>
+                        <li><a href="form-xeditable"><%=translation.Form_Xeditable%></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-chart-line"></i>
+                        <span><%=translation.Charts%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="charts-morris"><%=translation.Morris_Chart%></a></li>
+                        <li><a href="charts-chartist"><%=translation.Chartist_Chart%></a></li>
+                        <li><a href="charts-chartjs"><%=translation.Chartjs_Chart%></a></li>
+                        <li><a href="charts-flot"><%=translation.Flot_Chart%></a></li>
+                        <li><a href="charts-c3"><%=translation.C3_Chart%></a></li>
+                        <li><a href="charts-sparkline"><%=translation.Sparkline_Chart%></a></li>
+                        <li><a href="charts-other"><%=translation.Jquery_Knob_Chart%></a></li>
+                        <li><a href="charts-peity"><%=translation.Peity_Chart%></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-format-list-bulleted-type"></i>
+                        <span><%=translation.Tables%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="tables-basic"><%=translation.Basic_Tables%></a></li>
+                        <li><a href="tables-datatable"><%=translation.Data_Table%></a></li>
+                        <li><a href="tables-responsive"><%=translation.Responsive_Table%></a></li>
+                        <li><a href="tables-editable"><%=translation.Editable_Table%></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-album"></i>
+                        <span><%=translation.Icons%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="icons-material"><%=translation.Material_Design%></a></li>
+                        <li><a href="icons-ion"><%=translation.Ion_Icons%></a></li>
+                        <li><a href="icons-fontawesome"><%=translation.Font_Awesome%></a></li>
+                        <li><a href="icons-themify"><%=translation.Themify_Icons%></a></li>
+                        <li><a href="icons-dripicons"><%=translation.Dripicons%></a></li>
+                        <li><a href="icons-typicons"><%=translation.Typicons_Icons%></a></li>
+                        <li><a href="icons-weather"><%=translation.Weather_Icons%></a></li>
+                        <li><a href="icons-mobirise"><%=translation.Mobirise_Icons%></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <span class="badge rounded-pill bg-danger float-end">2</span>
+                        <i class="mdi mdi-google-maps"></i>
+                        <span><%=translation.Maps%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="maps-google"><%=translation.Google_Map%></a></li>
+                        <li><a href="maps-vector"><%=translation.Vector_Map%></a></li>
+                    </ul>
+                </li>
+                <li class="menu-title"><%=translation.Extras%></li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-movie-filter-outline"></i>
+                        <span><%=translation.Layouts%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="true">
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow"><%=translation.Vertical%></a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="layouts-light-sidebar"><%=translation.Light_Sidebar%></a></li>
+                                <li><a href="layouts-compact-sidebar"><%=translation.Compact_Sidebar%></a></li>
+                                <li><a href="layouts-icon-sidebar"><%=translation.Icon_Sidebar%></a></li>
+                                <li><a href="layouts-boxed"><%=translation.Boxed_Layout%></a></li>
+                                <li><a href="layouts-colored-sidebar"><%=translation.Colored_Sidebar%></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow"><%=translation.Horizontal%></a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="layouts-horizontal"><%=translation.Horizontal%></a></li>
+                                <li><a href="layouts-h-topbar-light"><%=translation.Light_Topbar%></a></li>
+                                <li><a href="layouts-h-boxed"><%=translation.Boxed_Layout%></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-account-box"></i>
+                        <span><%=translation.Authentication%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="pages-login"><%=translation.Login%></a></li>
+                        <li><a href="pages-register"><%=translation.Register%></a></li>
+                        <li><a href="pages-recoverpw"><%=translation.Recover_Password%></a></li>
+                        <li><a href="pages-lock-screen"><%=translation.Lock_Screen%></a></li>
+                        <li><a href="pages-login-2"><%=translation.Login_2%></a></li>
+                        <li><a href="pages-register-2"><%=translation.Register_2%></a></li>
+                        <li><a href="pages-recoverpw-2"><%=translation.Recover_Password_2%></a></li>
+                        <li><a href="pages-lock-screen-2"><%=translation.Lock_Screen_2%></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-book-multiple-outline"></i>
+                        <span><%=translation.Extra_Pages%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="pages-timeline"><%=translation.Timeline%></a></li>
+                        <li><a href="pages-invoice"><%=translation.Invoice%></a></li>
+                        <li><a href="pages-directory"><%=translation.Directory%></a></li>
+                        <li><a href="pages-blank"><%=translation.Blank_Page%></a></li>
+                        <li><a href="pages-404"><%=translation.Error_404%></a></li>
+                        <li><a href="pages-500"><%=translation.Error_500%></a></li>
+                        <li><a href="pages-pricing"><%=translation.Pricing%></a></li>
+                        <li><a href="pages-gallery"><%=translation.Gallery%></a></li>
+                        <li><a href="pages-maintenance"><%=translation.Maintenance%></a></li>
+                        <li><a href="pages-coming-soon"><%=translation.Coming_Soon%></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-cart-outline"></i>
+                        <span><%=translation.Ecommerce%> </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="ecommerce-product-list"><%=translation.Product_List%></a></li>
+                        <li><a href="ecommerce-product-grid"><%=translation.Product_Grid%></a></li>
+                        <li><a href="ecommerce-order-history"><%=translation.Order_History%></a></li>
+                        <li><a href="ecommerce-customers"><%=translation.Customers%></a></li>
+                        <li><a href="ecommerce-product-edit"><%=translation.Product_Edit%></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-flask-outline"></i>
+                        <span> <%=translation.Email_Templates%> </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="email-templates-basic"><%=translation.Basic_Action_Email%></a></li>
+                        <li><a href="email-templates-alert"><%=translation.Alert_Email%></a></li>
+                        <li><a href="email-templates-billing"><%=translation.Billing_Email%></a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-title"><%=translation.Help_and_Support%></li>
+
+                <li>
+                    <a href="faq" class="waves-effect">
+                        <i class="mdi mdi-help-circle"></i>
+                        <span> <%=translation.FAQ%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact" class="waves-effect">
+                        <span class="badge rounded-pill bg-warning float-end">3</span>
+                        <i class="mdi mdi-face-agent"></i>
+                        <span>   <%=translation.Contact%>  </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="dripicons-network-1"></i>
+                        <span><%=translation.Multi_Level%></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="true">
+                        <li><a href="javascript: void(0);"><%=translation.Level_1_1%></a></li>
+                        <li><a href="javascript: void(0);" class="has-arrow"><%=translation.Level_1_2%></a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="javascript: void(0);"><%=translation.Level_2_1%></a></li>
+                                <li><a href="javascript: void(0);"><%=translation.Level_2_2%></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>-->
+            </ul>
+        </div>
+
+        <div id="sidebar-menu" class="teams">
+            <!-- Left Menu Start -->
+            <!-- <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title"><%=translation.Main%></li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Dashboard%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Clients%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Sales%> </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Tasks%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/settings" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Email%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/pages-pricing" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Booking%> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/pages-pricing" class="waves-effect">
+                        <i class="mdi mdi-view-dashboard"></i>
+                        <span> <%=translation.Settings%> </span>
+                    </a>
+                </li>
+            </ul> -->
+        </div>
+
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->

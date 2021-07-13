@@ -1,0 +1,59 @@
+<%- contentFor('HeaderCss') %>
+    <link href="public/assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css">
+
+<%- contentFor('breadcrumb') %>
+
+<%- contentFor('body') %>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="card-title">HTML Highlight</h4>
+                    <p class="card-title-desc">Prism is a lightweight, extensible syntax highlighter, built with
+                        modern web standards in mind.</p>
+
+                    <pre class="language-markup mb-0"><code class=" language-markup">
+&lt;html&gt;
+    &lt;!-- this is a comment --&gt;
+    &lt;head&gt;
+        &lt;title&gt;HTML Example&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        The indentation tries to be &lt;em&gt;somewhat &amp;quot;do what
+        I mean&amp;quot;&lt;/em&gt;... but might not match your style.
+    &lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+                </div>
+            </div>
+        </div> <!-- end col -->
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="card-title">Css Highlight</h4>
+                    <p class="card-title-desc">Prism is a lightweight, extensible syntax highlighter, built with
+                        modern web standards in mind.</p>
+
+                    <pre class="line-numbers mb-0">
+<code class="language-css">
+.example {
+    font-family: Georgia, Times, serif;
+    color: #555;
+    text-align: center;
+}
+</code>
+</pre>
+                </div>
+            </div>
+        </div> <!-- end col -->
+
+    </div> <!-- end row -->
+
+<%- contentFor('FooterJs') %>
+    <script src="public/assets/libs/prismjs/prism.js"></script>
+
+<%- contentFor('BottomJs') %>

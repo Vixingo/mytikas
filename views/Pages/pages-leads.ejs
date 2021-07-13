@@ -1,0 +1,151 @@
+<%- contentFor('HeaderCss') %> <%- contentFor('breadcrumb') %> <%-
+contentFor('body') %>
+
+<div class="leads_header d-flex justify-content-between align-items-center">
+    <div class="lead_left">
+        <h4 class="fw-light">All leads</h4>
+        <p style="color: #707070">4 result</p>
+    </div>
+    <div class="lead_right">
+        <div class="btn-group me-1">
+            <button
+                class="btn btn-sm"
+                type="button"
+                style="border: 1px solid rgba(0, 0, 0, 0.2)"
+            >
+                <i class="fas fa-phone-alt"></i> &nbsp; Call
+            </button>
+            <button
+                type="button"
+                class="btn dropdown-toggle dropdown-toggle-split btn-sm"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border: 1px solid rgba(0, 0, 0, 0.2)"
+            >
+                <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+                Bulk Email
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button
+                class="btn btn-sm"
+                type="button"
+                style="border: 1px solid rgba(0, 0, 0, 0.2)"
+            >
+                <i class="fas fa-envelope"></i> &nbsp; Email
+            </button>
+            <button
+                type="button"
+                class="btn dropdown-toggle dropdown-toggle-split btn-sm"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border: 1px solid rgba(0, 0, 0, 0.2)"
+            >
+                <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+                Bulk Email
+            </ul>
+        </div>
+        <button class="btn"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+</div>
+<hr />
+<div class="sort d-flex justify-content-end">
+    <button
+        class="btn rounded-0"
+        style="border-right: 1px solid rgba(0, 0, 0, 0.1)"
+    >
+        <i class="fas fa-compress-arrows-alt"></i>&nbsp; Narrow Your Results
+    </button>
+
+    <div class="dropdown">
+        <button
+            class="btn rounded-0 dropdown-toggle"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="border-right: 1px solid rgba(0, 0, 0, 0.1)"
+        >
+            <i class="fas fa-sort-amount-down"></i>&nbsp; Sort
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button
+            class="btn rounded-0 dropdown-toggle"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+        >
+            <i class="fas fa-columns"></i>&nbsp; Narrow Your Results
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+</div>
+<hr />
+<table class="table table-bordered table-hover bg-white">
+    <thead
+        style="
+            border-bottom: 1px solid red !important;
+            background-color: #ddd;
+            font-size: 14px;
+            font-weight: 500;
+        "
+    >
+        <tr>
+            <th>Company</th>
+            <th><i class="fas fa-envelope"></i></th>
+            <th><i class="fas fa-phone-alt"></i></th>
+            <th>Contacts</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tr>
+        <td>microsoft</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>Bruce Wayne</td>
+        <td>Qualified</td>
+    </tr>
+    <tr>
+        <td>microsoft</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>Bruce Wayne</td>
+        <td>Qualified</td>
+    </tr>
+    <tr>
+        <td>microsoft</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>Bruce Wayne</td>
+        <td>Qualified</td>
+    </tr>
+    <tr>
+        <td>microsoft</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>Bruce Wayne</td>
+        <td>Qualified</td>
+    </tr>
+</table>
+
+<%- contentFor('FooterJs') %>
+<script src="public/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<script src="public/assets/js/pages/directory.init.js"></script>
+
+<%- contentFor('BottomJs') %>

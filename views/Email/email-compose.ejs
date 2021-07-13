@@ -1,0 +1,167 @@
+<%- contentFor('HeaderCss') %>
+
+<%- contentFor('breadcrumb') %>
+
+<%- contentFor('body') %>
+
+<div class="row">
+    <div class="col-12">
+        <!-- Left sidebar -->
+        <div class="email-leftbar">
+            <div class="d-grid">
+                <a href="email-compose" class="btn btn-danger rounded btn-custom  waves-effect waves-light">Compose</a>
+            </div>
+
+            <div class="mail-list mt-3">
+                <a href="#" class="active">Inbox <span class="ms-1">(18)</span></a>
+                <a href="#">Starred</a>
+                <a href="#">Important</a>
+                <a href="#">Draft</a>
+                <a href="#">Sent Mail</a>
+                <a href="#">Trash</a>
+            </div>
+
+
+            <h6 class="mt-4">Labels</h6>
+
+            <div class="mail-list mt-3">
+                <a href="#"><span class="mdi mdi-arrow-right-drop-circle text-info float-end mt-1 ms-2"></span>Theme Support</a>
+                <a href="#"><span class="mdi mdi-arrow-right-drop-circle text-warning float-end mt-1 ms-2"></span>Freelance</a>
+                <a href="#"><span class="mdi mdi-arrow-right-drop-circle text-purple float-end mt-1 ms-2"></span>Social</a>
+                <a href="#"><span class="mdi mdi-arrow-right-drop-circle text-pink float-end mt-1 ms-2"></span>Friends</a>
+                <a href="#"><span class="mdi mdi-arrow-right-drop-circle text-success float-end mt-1 ms-2"></span>Family</a>
+            </div>
+
+            <h6 class="mt-4">Chat</h6>
+
+            <div class="mt-4">
+                <a href="#" class="d-flex">
+                    <img class="me-3 rounded-circle" src="public/assets/images/users/avatar-2.jpg" alt="Generic placeholder image" height="36">
+                    <div class="chat-user-box">
+                        <p class="user-title m-0">Scott Median</p>
+                        <p class="text-muted">Hello</p>
+                    </div>
+                </a>
+
+                <a href="#" class="d-flex">
+                    <img class="me-3 rounded-circle" src="public/assets/images/users/avatar-3.jpg" alt="Generic placeholder image" height="36">
+                    <div class="chat-user-box">
+                        <p class="user-title m-0">Julian Rosa</p>
+                        <p class="text-muted">What about our next..</p>
+                    </div>
+                </a>
+
+                <a href="#" class="d-flex">
+                    <img class="me-3 rounded-circle" src="public/assets/images/users/avatar-4.jpg" alt="Generic placeholder image" height="36">
+                    <div class="chat-user-box">
+                        <p class="user-title m-0">David Medina</p>
+                        <p class="text-muted">Yeah everything is fine</p>
+                    </div>
+                </a>
+
+                <a href="#" class="d-flex">
+                    <img class="me-3 rounded-circle" src="public/assets/images/users/avatar-6.jpg" alt="Generic placeholder image" height="36">
+                    <div class="chat-user-box">
+                        <p class="user-title m-0">Jay Baker</p>
+                        <p class="text-muted">Wow that's great</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <!-- End Left sidebar -->
+
+
+        <!-- Right Sidebar -->
+        <div class="email-rightbar">
+            <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group me-2 mb-2 mb-sm-0">
+                    <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-inbox"></i></button>
+                    <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-exclamation-circle"></i></button>
+                    <button type="button" class="btn btn-primary waves-light waves-effect"><i class="far fa-trash-alt"></i></button>
+                </div>
+                <div class="btn-group me-2 mb-2 mb-sm-0">
+                    <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-folder"></i>
+                        <i class="mdi mdi-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Updates</a>
+                        <a class="dropdown-item" href="#">Social</a>
+                        <a class="dropdown-item" href="#">Team Manage</a>
+                    </div>
+                </div>
+                <div class="btn-group me-2 mb-2 mb-sm-0">
+                    <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-tag"></i>
+                        <i class="mdi mdi-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Updates</a>
+                        <a class="dropdown-item" href="#">Social</a>
+                        <a class="dropdown-item" href="#">Team Manage</a>
+                    </div>
+                </div>
+
+                <div class="btn-group me-2 mb-2 mb-sm-0">
+                    <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        More <i class="mdi mdi-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Mark as Unread</a>
+                        <a class="dropdown-item" href="#">Mark as Important</a>
+                        <a class="dropdown-item" href="#">Add to Tasks</a>
+                        <a class="dropdown-item" href="#">Add Star</a>
+                        <a class="dropdown-item" href="#">Mute</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mt-4">
+                <div class="card-body">
+
+                    <div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="To">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <form method="post">
+                                <textarea id="email-editor" name="area"></textarea>
+                            </form>
+                        </div>
+
+                        <div class="btn-toolbar mb-0">
+                            <div class="">
+                                <button type="button" class="btn btn-success waves-effect waves-light me-1"><i class="far fa-save"></i></button>
+                                <button type="button" class="btn btn-success waves-effect waves-light me-1"><i class="far fa-trash-alt"></i></button>
+                                <button class="btn btn-purple waves-effect waves-light"> <span>Send</span> <i class="fab fa-telegram-plane ms-2"></i> </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div> <!-- end Col-9 -->
+
+    </div>
+
+</div><!-- End row -->
+
+<%- contentFor('FooterJs') %>
+
+<!--tinymce js-->
+<script src="public/assets/libs/tinymce/tinymce.min.js"></script>
+
+<!-- email editor init -->
+<script src="public/assets/js/pages/email-editor.init.js"></script>
+
+<%- contentFor('BottomJs') %>
