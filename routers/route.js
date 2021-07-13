@@ -355,6 +355,10 @@ module.exports = function (app) {
     });
 
     // Pages
+    app.get("/pages-contacts", isUserAllowed, function (req, res) {
+        res.locals = { title: "contacts" };
+        res.render("Pages/pages-contacts");
+    });
     app.get("/pages-leads", isUserAllowed, function (req, res) {
         res.locals = { title: "leads" };
         res.render("Pages/pages-leads");

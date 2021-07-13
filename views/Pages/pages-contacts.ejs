@@ -1,0 +1,172 @@
+<%- contentFor('HeaderCss') %> <%- contentFor('breadcrumb') %> <%-
+contentFor('body') %>
+
+<div class="leads_header d-flex justify-content-between align-items-center">
+    <div class="lead_left">
+        <h4 class="fw-light">Contacts</h4>
+        <p style="color: #707070">
+            7 Total Results &nbsp; &bull; &nbsp; <a href="#">Set limits</a>
+        </p>
+    </div>
+    <div class="lead_right">
+        <button
+            class="btn btn-sm"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Click to copy link"
+        >
+            <i class="fas fa-file-import"></i> &nbsp; Share Links
+        </button>
+        <div class="btn-group">
+            <button
+                class="btn btn-sm"
+                type="button"
+                style="border: 1px solid rgba(0, 0, 0, 0.2)"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Bulk email these Contacts..."
+            >
+                <i class="fas fa-envelope"></i> &nbsp; Email
+            </button>
+            <button
+                type="button"
+                class="btn dropdown-toggle dropdown-toggle-split btn-sm"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border: 1px solid rgba(0, 0, 0, 0.2)"
+            >
+                <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="mx-3">
+                    <i class="fas fa-envelope"></i>&nbsp; Bulk Email
+                </li>
+            </ul>
+        </div>
+        <button
+            class="btn"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="More"
+        >
+            <i class="fas fa-ellipsis-h"></i>
+        </button>
+    </div>
+</div>
+<hr />
+<div class="sort d-flex justify-content-between">
+    <button class="btn rounded-0">
+        <i class="fas fa-plus-circle"></i>&nbsp; Add Filter
+    </button>
+
+    <div class="d-flex justify-content-end">
+        <div class="dropdown dropup">
+            <button
+                class="btn rounded-0 dropdown-toggle"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border-left: 1px solid rgba(0, 0, 0, 0.1)"
+            >
+                <i class="fas fa-sort-amount-down"></i>&nbsp; Sort &nbsp;
+                <i class="fas fa-caret-up"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown dropup">
+            <button
+                class="btn rounded-0 dropdown-toggle"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border-left: 1px solid rgba(0, 0, 0, 0.1)"
+            >
+                <i class="fas fa-columns"></i>&nbsp;
+                <i class="fas fa-caret-up"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<hr />
+<table class="table table-bordered table-hover bg-white">
+    <thead style="background-color: #ddd; font-size: 14px; font-weight: 600">
+        <tr>
+            <th><b>Contact Name</b></th>
+            <th><i class="fas fa-envelope"></i></th>
+            <th><i class="fas fa-phone-alt"></i></th>
+            <th><b>Contact Title</b></th>
+            <th><b>Company</b></th>
+        </tr>
+    </thead>
+
+    <tr>
+        <td>Bruce Wanye</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>The Dark Knight</td>
+        <td>The Dark Knight Wayne Enterprises (Example Lead)</td>
+    </tr>
+    <tr>
+        <td>Tobias Fünke</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>Blue Man Group (Understudy)</td>
+        <td>Bluth Company (Example Lead)</td>
+    </tr>
+    <tr>
+        <td>Gob Bluth</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>Magician</td>
+        <td>Bluth Company (Example Lead)</td>
+    </tr>
+    <tr>
+        <td>Support</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td></td>
+        <td>Close (Example Lead)</td>
+    </tr>
+    <tr>
+        <td>Customer Success Team</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td></td>
+        <td>Close (Example Lead)</td>
+    </tr>
+    <tr>
+        <td>Nick Persico</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>Director of Revenue</td>
+        <td>Close (Example Lead)</td>
+    </tr>
+    <tr>
+        <td>Steli Efti</td>
+        <td><i class="fas fa-envelope"></i></td>
+        <td><i class="fas fa-phone-alt"></i></td>
+        <td>CEO & Co-Founder</td>
+        <td>Close (Example Lead)</td>
+    </tr>
+</table>
+
+<%- contentFor('FooterJs') %>
+<script src="public/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<script src="public/assets/js/pages/directory.init.js"></script>
+
+<%- contentFor('BottomJs') %>
