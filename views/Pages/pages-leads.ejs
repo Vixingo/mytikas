@@ -24,8 +24,8 @@ contentFor('body') %>
             >
                 <i class="fas fa-caret-down"></i>
             </button>
-            <ul class="dropdown-menu">
-                Bulk Email
+            <ul class="dropdown-menu dropdown-menu-end px-3">
+                <li><i class="fas fa-phone-alt"></i>&nbsp; Bulk Call</li>
             </ul>
         </div>
         <div class="btn-group">
@@ -48,20 +48,29 @@ contentFor('body') %>
             >
                 <i class="fas fa-caret-down"></i>
             </button>
-            <ul class="dropdown-menu">
-                <li class="mx-3">
-                    <i class="fas fa-envelope"></i>&nbsp; Bulk Email
-                </li>
+            <ul class="dropdown-menu dropdown-menu-end px-3">
+                <li><i class="fas fa-envelope"></i>&nbsp; Bulk Email</li>
             </ul>
         </div>
-        <button
-            class="btn"
+
+        <div
+            class="btn-group"
             data-bs-toggle="tooltip"
             data-bs-placement="top"
             title="More"
         >
-            <i class="fas fa-ellipsis-h"></i>
-        </button>
+            <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end px-3">
+                <li>more</li>
+            </ul>
+        </div>
     </div>
 </div>
 <hr />
@@ -73,7 +82,7 @@ contentFor('body') %>
         <i class="fas fa-compress-arrows-alt"></i>&nbsp; Narrow Your Results
     </button>
 
-    <div class="dropdown dropup">
+    <div class="dropdown">
         <button
             class="btn rounded-0 dropdown-toggle"
             id="dropdownMenuButton1"
@@ -82,16 +91,19 @@ contentFor('body') %>
             style="border-right: 1px solid rgba(0, 0, 0, 0.1)"
         >
             <i class="fas fa-sort-amount-down"></i>&nbsp; Sort &nbsp;
-            <i class="fas fa-caret-up"></i>
+            <i class="fas fa-caret-down"></i>
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton1"
+        >
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
     </div>
 
-    <div class="dropdown dropup">
+    <div class="dropdown">
         <button
             class="btn rounded-0 dropdown-toggle"
             id="dropdownMenuButton2"
@@ -99,9 +111,12 @@ contentFor('body') %>
             aria-expanded="false"
         >
             <i class="fas fa-columns"></i>&nbsp;
-            <i class="fas fa-caret-up"></i>
+            <i class="fas fa-caret-down"></i>
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton2"
+        >
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
