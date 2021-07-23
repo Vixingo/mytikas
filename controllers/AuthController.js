@@ -1,23 +1,23 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var urlencodeParser = bodyParser.urlencoded({ extended: false });
+var urlencodeParser = express.urlencoded({ extended: true });
 
 var validator = require('express-validator');
 
 var axios = require("axios");
-var MockAdapter = require("axios-mock-adapter");
+// var MockAdapter = require("axios-mock-adapter");
 
 // This sets the mock adapter on the default instance
-var mock = new MockAdapter(axios);
+// var mock = new MockAdapter(axios);
 
 let users = [
 	{ id: 1, username: 'admin', password: '123456', email: 'admin@themesbrand.com' }
 ];
 
 // Mock GET request to /users when param `searchText` is 'John'
-mock.onGet("/users", { params: { searchText: "John" } }).reply(200, {
-	users: users,
-});
+// mock.onGet("/users", { params: { searchText: "John" } }).reply(200, {
+// 	users: users,
+// });
 
 module.exports = function (app) {
 
@@ -132,4 +132,26 @@ module.exports = function (app) {
 	});
 
 
+	app.post('/api/test', urlencodeParser, function (req, res) {
+		// res.send(req.body)
+		try {
+			axios
+				.post('http://localhost:8000/api/createLead', {
+					'company': req.body.company,
+					'contact': req.body.contact
+				})
+				.then(response => {
+					// console.log(response.data);
+					res.send(response.data);
+					// res.render('Pages/pages-leads')
+				})
+				.catch(err => {
+					console.log(err);
+					res.send(err);
+				});
+		} catch (error) {
+			console.log(error);
+			// res.send(error);
+		}
+	});
 };

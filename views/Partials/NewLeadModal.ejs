@@ -1,5 +1,5 @@
 <!-- sample modal content -->
-<div id="myModaladd" class="modal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="newLeadModal" class="modal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -10,15 +10,15 @@
             </div>
             <div class="modal-body text-purple">
 
-                <form class="row g-3" id="newLeadForm">
+                <form class="row g-3" id="newLeadForm" method="POST" action="/api/test">
                     <div class="col-md-6">
                         <label for="companyname" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="companyName" name="companyName"
+                        <input type="text" class="form-control" id="companyName" name="company"
                             placeholder="e.g: Mytikas" required autocomplete="off">
                     </div>
                     <div class="col-md-6">
                         <label for="contactName" class="form-label">Contact Name</label>
-                        <input type="text" class="form-control" id="contactName" name="contactName"
+                        <input type="text" class="form-control" id="contactName" name="contact"
                             placeholder="e.g. Steli Efti" required autocomplete="off">
                     </div>
                 </form>

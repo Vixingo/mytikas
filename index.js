@@ -7,9 +7,11 @@ var validator = require('express-validator');
 
 // import controller
 var AuthController = require('./controllers/AuthController');
+// var ApiController = require('./controllers/ApiController');
 
 // import Router file
 var pageRouter = require('./routers/route');
+// var apiRouter = require('./routers/apiRoutes');
 
 var session = require('express-session');
 var bodyParser = require('body-parser');
@@ -53,11 +55,12 @@ app.use(expressLayouts);
 
 // Define All Route 
 pageRouter(app);
+// app.use(apiRouter);
 
 app.get('/', function (req, res) {
   res.redirect('/');
 });
 
-http.listen(8000, function () {
-  console.log('listening on *:8000');
+http.listen(5000, function () {
+  console.log('listening on http://localhost:5000');
 });
