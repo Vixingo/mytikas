@@ -20,5 +20,4 @@ $(() => {
             alert("Error creating lead");
         });
     });
-
 });

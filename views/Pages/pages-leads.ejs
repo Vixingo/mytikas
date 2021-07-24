@@ -80,7 +80,8 @@
                 </div>
             </div>
             <hr />
-            <table class="table table-bordered table-hover bg-white">
+
+            <table id="leadSummary" class="table table-bordered table-hover bg-white">
                 <thead style="
             border-bottom: 1px solid red !important;
             background-color: #ddd;
@@ -96,34 +97,14 @@
                     </tr>
                 </thead>
 
-                <tr>
-                    <td>microsoft</td>
-                    <td><i class="fas fa-envelope"></i></td>
-                    <td><i class="fas fa-phone-alt"></i></td>
-                    <td>Bruce Wayne</td>
-                    <td>Qualified</td>
-                </tr>
-                <tr>
-                    <td>microsoft</td>
-                    <td><i class="fas fa-envelope"></i></td>
-                    <td><i class="fas fa-phone-alt"></i></td>
-                    <td>Bruce Wayne</td>
-                    <td>Qualified</td>
-                </tr>
-                <tr>
-                    <td>microsoft</td>
-                    <td><i class="fas fa-envelope"></i></td>
-                    <td><i class="fas fa-phone-alt"></i></td>
-                    <td>Bruce Wayne</td>
-                    <td>Qualified</td>
-                </tr>
-                <tr>
-                    <td>microsoft</td>
-                    <td><i class="fas fa-envelope"></i></td>
-                    <td><i class="fas fa-phone-alt"></i></td>
-                    <td>Bruce Wayne</td>
-                    <td>Qualified</td>
-                </tr>
+                <tbody>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="100%">
+                            <div class="spinner-3"></div>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
 
             <%- contentFor('FooterJs') %>
@@ -132,3 +113,46 @@
                 <script src="public/assets/js/pages/directory.init.js"></script>
 
                 <%- contentFor('BottomJs') %>
+                    <script>
+                        $(() => {
+
+                            $.ajax({
+                                type: "GET",
+                                url: "http://localhost:8000/api/getLeadSummary",
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+                                success: function (response) {
+                                    // console.log(response);
+                                    let newRows;
+                                    $.each(response.data, function (k, v) {
+                                        newRows +=
+                                            '<tr>' +
+                                            '<td>' + v.name + '</td>' +
+                                            '<td> <i class="fas fa-envelope"> </td>' +
+                                            '<td> <i class="fas fa-phone-alt"> </td>' +
+                                            '<td>' + v.contacts_summary + '</td>' +
+                                            '<td>' + v.status_label + '</td>' +
+                                            '</tr>';
+                                    })
+                                    removeLoader();
+                                    $('#leadSummary').append(newRows);
+                                },
+                                failure: function (response) {
+                                    console.log(response.responseText);
+                                },
+                                error: function (response) {
+                                    if (response.statusText === 'error') {
+                                        $('body').append('<h2 class="text-center text-danger">Server Error!</h2>');
+                                    }
+                                    $('#leadSummary').hide();
+                                }
+                            });
+
+
+                            function removeLoader() {
+                                $('#leadSummary tr:nth-child(2)').fadeOut(500, function () {
+                                    $(this).remove();
+                                });
+                            }
+                        });
+                    </script>
