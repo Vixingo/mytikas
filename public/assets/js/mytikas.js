@@ -14,7 +14,7 @@ $(() => {
             data: form.serialize()
         }).done(function (data) {
             form.trigger("reset");
-            alert("Lead Created");
+            window.location.replace('/pages-leads');
         }).fail(function (data) {
             console.log(data);
             alert("Error creating lead");
